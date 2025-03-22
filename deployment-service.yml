@@ -12,6 +12,7 @@ spec:
     metadata:
       labels:
         app: tetris
+        env: green
     spec:
       containers:
       - name: tetris
@@ -27,6 +28,7 @@ metadata:
 spec:
   selector:
     app: tetris
+    env: green
   ports:
   - protocol: TCP
     port: 80                 # Expose port 80
